@@ -3,71 +3,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.stef</groupId>
-        <artifactId>my-saas-dependencies</artifactId>
-        <version>1.0.0</version>
-        <relativePath>../my-saas-dependencies/pom.xml</relativePath>
-    </parent>
-
+    <groupId>com.stef</groupId>
     <artifactId>my-saas-commons</artifactId>
     <name>${project.artifactId}</name>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <properties>
-        <spring-boot.version>2.4.3</spring-boot.version>
-        <spring-cloud.version>2020.0.1</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.version>3.8.1</maven.compiler.version>
-        <spring.checkstyle.version>0.0.23</spring.checkstyle.version>
-        <spring-boot-admin.version>2.3.1</spring-boot-admin.version>
-        <hutool.version>5.5.8</hutool.version>
-        <captcha.version>1.2.7</captcha.version>
-        <swagger.fox.version>3.0.0</swagger.fox.version>
-        <knife4j.version>3.0.2</knife4j.version>
-        <velocity.version>1.7</velocity.version>
-        <lcn.version>4.1.0</lcn.version>
-        <jasypt.version>3.0.3</jasypt.version>
-        <ttl.version>2.11.4</ttl.version>
-        <ureport.version>2.2.9</ureport.version>
-        <aws.version>1.11.543</aws.version>
-        <git.commit.version>2.2.5</git.commit.version>
     </properties>
 
     <dependencies>
-        <!-- Spring -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-core</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-        </dependency>
-
-        <!-- Commons  -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
-
         <!--Lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
